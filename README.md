@@ -1,6 +1,6 @@
 # Gün Projesi: Component Side Effects - NASA APOD
 
-Bu iki aşamalı bir proje olacaktır. 
+Bu iki aşamalı bir proje olacaktır.
 Bu projede NASA API yi kullanarak "Astronomy Photo Of The Day" (Günün Astronomi Fotosu) nu çağıracaksın. Önce datayı çağıracaksın, arayüzünüzde kullanmak üzere bu data parçalarını kullanarak bir kaç bileşen oluşturacaksın. 2. aşamada ise ([İKİNCİ_GÜN_README.md](IKINCI_GUN_README.md) dosyasının içinde) uygulamanızı Stillenmiş Bileşenler kullanarak düzenleyeceksin [Stillenmiş Bileşenler](https://github.com/Workintech/FSWeb-S6G3-Nasa.git).
 
 ## Talimatlar
@@ -8,7 +8,6 @@ Bu projede NASA API yi kullanarak "Astronomy Photo Of The Day" (Günün Astronom
 ---
 
 Bu talimatları dikkatlice okuyun. Sizden neler beklendiğini iyice anladıktan sonra uygulamaya başlayın.
-
 
 ## Giriş
 
@@ -50,7 +49,7 @@ Bu proje, create-react-app (CRA) kullanılarak bir araya getirildi. Bu projenin 
 - [ ] `App.js` (veya her nerede isterseniz), NASA'dan alacağın verileri bir state'e ekleyin.
 - [ ] API çağrısını işlemek için bir effect hook ekleyin
 - [ ] [NASA APOD API docs](https://api.nasa.gov/#apod) NASA APOD API dökümanlarına gidin, dökümanları okuyarak
-API çağrısını nasıl oluşturacağını öğre.
+      API çağrısını nasıl oluşturacağını öğre.
 - [ ] Bir API keye ihtiyacınız _yok_. Ancak, API istek sınırlarını aşarsan bir API keye ihtiyacın olabilir.
 - [ ] Dökümanlarda anlatılan API uç noktasından(endpoint) `axios` kullanarak verileri çekin.
 - [ ] `.then()` metodunuzda `console.log` ile çekilen verinin içeriğini iyice inceleyin. 😃
@@ -85,9 +84,9 @@ _Not: eğer photo url bir fotoğraf değilse, React applicationında bir video n
 if (!props.photoOfTheDay) return <h3>Yükleniyor...</h3>;
 
 // Veriler alındıktan sonra bileşeninizi normal şekilde görüntüleyin
-return (
-  {/* JSX'leriniz buraya */}
-);
+return {
+  /* JSX'leriniz buraya */
+};
 ```
 
 - API dökümanlarını dikkatlice okuyun. Bir geliştirici olarak birçok teknik belgeyi okuyacaksın, bu yüzden bunları anlamaya çalışmak için bu proje güzel bir pratik olacak.
@@ -99,8 +98,6 @@ MVP'ye ulaşılana ve son bir commit yapılana kadar ek görevleri denemeyin..
 - [ ] Opsiyonel bir `date` parametresi var dikkat ettin mi? Başka tarihe ait APOD'u çekmek için URL'de bunu şu şekilde tanımlayabilirsin `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14`. Başka tarihe ait APOD'ları görebilmek için bir dropdown ekleyin. Bu biraz zahmetli olacak, ancak uygulamanda biraz daha karmaşık mantık ve etkileşimden geçmek harika bir alıştırma olacak. Bu aynı zamanda çok yaygın bir kullanım türüdür, bu yüzden bunu denemen senin için faydalı olur
 - [ ] Aynı web sitesinde listelenen NASA'nın diğer API'lerinden birini kullanan başka bir uygulama yapın
 
-
-
-----
+---
 
 ## Bölüm II - [Üst seviye stilleme teknikleri](İKİNCİ_GÜN_README.md)
